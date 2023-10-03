@@ -27,7 +27,8 @@ function audioSlicer(){
 
 
     // Delete existing files in the target directory
-    deleteFilesInDirectory(targetDirectory);
+    //deleteFilesInDirectory(targetDirectory);
+    //deleting handled in mainPodcastProcess.js
 
     // Split the audio into chunks
     for (let index = 0; index < totalChunks; index++) {
