@@ -58,6 +58,8 @@ async function mainPodcastSummarizer(podcastData) {
   } finally{
     //delete created files
     await cleanup()
+    const memoryUsage = process.memoryUsage();
+    console.log(memoryUsage);
   }
 }
 
